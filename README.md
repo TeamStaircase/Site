@@ -16,7 +16,7 @@ Website oficial do **Team Staircase**, um estúdio de desenvolvimento de jogos d
 
 ## 🎯 Sobre o Projeto
 
-O Team Staircase é um estúdio de desenvolvimento de jogos que busca transformar ideias em realidade através de jogos extraordinários. Este website apresenta nossos jogos, equipe e permite que visitantes entrem em contato conosco.
+O Team Staircase é um estúdio de desenvolvimento de jogos que busca transformar ideias em realidade através de jogos extraordinários. Este website apresenta os jogos, equipe e permite que visitantes entrem em contato com eles.
 
 ## ✨ Funcionalidades
 
@@ -33,6 +33,7 @@ O Team Staircase é um estúdio de desenvolvimento de jogos que busca transforma
 ## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
+
 - **Next.js 16.1.4** - Framework React com App Router
 - **React 19.2.3** - Biblioteca JavaScript para interfaces
 - **TypeScript 5** - Tipagem estática para JavaScript
@@ -41,11 +42,13 @@ O Team Staircase é um estúdio de desenvolvimento de jogos que busca transforma
 - **Lucide React 0.562.0** - Ícones modernos
 
 ### Backend & CMS
+
 - **Sanity CMS 3.99.0** - Headless CMS para gerenciamento de conteúdo
 - **Resend 6.8.0** - Serviço de envio de emails
 - **Next.js API Routes** - API endpoints para formulário de contato
 
 ### Utilitários
+
 - **@portabletext/react** - Renderização de conteúdo rico do Sanity
 - **@sanity/client** - Cliente Sanity para queries GROQ
 - **@sanity/image-url** - Builder de URLs de imagens otimizadas
@@ -110,12 +113,13 @@ mandora/
 ### Instalação
 
 1. **Clone o repositório**
+
    ```bash
    git clone <repository-url>
    cd mandora
    ```
-
 2. **Instale as dependências**
+
    ```bash
    npm install
    # ou
@@ -123,29 +127,29 @@ mandora/
    # ou
    pnpm install
    ```
-
 3. **Configure as variáveis de ambiente**
-   
+
    Crie um arquivo `.env.local` na raiz do projeto:
+
    ```env
    # Sanity CMS
    NEXT_PUBLIC_SANITY_PROJECT_ID=seu_project_id
    NEXT_PUBLIC_SANITY_DATASET=production
-   
+
    # Resend (Email)
    RESEND_API_KEY=sua_api_key
    CONTACT_EMAIL=seu@email.com
-   
+
    # Opcional
    NEXT_PUBLIC_SITE_URL=https://teamstaircase.com
    ```
-
 4. **Execute o servidor de desenvolvimento**
+
    ```bash
    npm run dev
    ```
-
 5. **Acesse o site**
+
    - Website: http://localhost:3000
    - Sanity Studio: http://localhost:3000/studio
 
@@ -154,25 +158,27 @@ mandora/
 ### Sanity CMS
 
 1. **Criar Projeto no Sanity**
+
    - Acesse [sanity.io](https://www.sanity.io)
    - Crie uma conta e um novo projeto
    - Copie o `Project ID` e `Dataset` para o `.env.local`
-
 2. **Schemas Configurados**
+
    - `sanity/schemas/game.ts` - Gerenciar jogos
    - `sanity/schemas/member.ts` - Gerenciar membros da equipe
-
 3. **Acessar o Studio**
+
    - Após configurar, acesse `/studio` para gerenciar o conteúdo
 
 ### Resend (Email)
 
 1. **Criar Conta no Resend**
+
    - Acesse [resend.com](https://resend.com)
    - Crie uma conta e obtenha sua API Key
    - Adicione a API Key no `.env.local`
-
 2. **Configurar Domínio (Opcional)**
+
    - Para produção, configure um domínio verificado no Resend
 
 ## 📦 Scripts Disponíveis
@@ -192,16 +198,19 @@ npm run lint         # Executa ESLint para verificar código
 ## 🎨 Design System
 
 ### Cores Principais
+
 - **Background**: `slate-950`
 - **Texto**: `slate-300`, `slate-400`
 - **Destaques**: `purple-500/600`, `cyan-400`, `indigo-600`
 - **Gradientes**: `from-violet-600 to-indigo-600`
 
 ### Tipografia
+
 - **Títulos**: Orbitron (`font-orbitron`)
 - **Corpo**: Inter (`font-inter`)
 
 ### Componentes Reutilizáveis
+
 - **Container**: Componente para centralização e padding consistente
 - **GameCard**: Card de jogo reutilizável
 - Layouts responsivos com Tailwind CSS
@@ -217,6 +226,7 @@ npm run lint         # Executa ESLint para verificar código
 ### Outras Plataformas
 
 O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
+
 - Netlify
 - Railway
 - AWS Amplify
@@ -225,6 +235,7 @@ O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
 ## 📝 Estrutura de Dados
 
 ### Game Schema
+
 - `title`: Título do jogo
 - `slug`: URL amigável
 - `shortDescription`: Descrição curta
@@ -237,6 +248,7 @@ O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
 - `videoUrl`: URL do trailer (opcional)
 
 ### Member Schema
+
 - `name`: Nome completo
 - `slug`: URL amigável
 - `avatar`: Foto do membro
@@ -246,21 +258,9 @@ O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
 - `linkedinUrl`: Link do LinkedIn
 - `githubUrl`: Link do GitHub
 
-## 🔗 Links
-
-- **Website**: [teamstaircase.com](https://teamstaircase.com)
-- **X (Twitter)**: [@TeamStaircase](https://x.com/TeamStaircase)
-- **Itch.io**: [team-staircase.itch.io](https://team-staircase.itch.io/)
-- **Bluesky**: [@team-staircase.bsky.social](https://bsky.app/profile/team-staircase.bsky.social)
-- **Email**: teamstaircasegames@gmail.com
-
-## 📄 Licença
-
-Todos os direitos reservados © 2024 Team Staircase
-
 ## 👥 Equipe
 
-Desenvolvido com ❤️ pelo **Team Staircase**
+Desenvolvido com ❤️ por Eduardo Tajra
 
 ---
 
