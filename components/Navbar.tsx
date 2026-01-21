@@ -12,8 +12,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/games", label: "Jogos" },
-    { href: "/contact", label: "Contato" },
+    { href: "/games", label: "Games" },
+    { href: "/contact", label: "Contact" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);

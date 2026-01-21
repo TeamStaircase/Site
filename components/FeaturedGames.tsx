@@ -91,10 +91,10 @@ export default function FeaturedGames({ games }: FeaturedGamesProps) {
           className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-white mb-4 font-[var(--font-orbitron)]">
-            Nossos Jogos
+            Our Games
           </h2>
           <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto font-[var(--font-inter)]">
-            Conheça nossos jogos mais recentes
+            Discover our latest games
           </p>
         </motion.div>
 
@@ -233,7 +233,7 @@ export default function FeaturedGames({ games }: FeaturedGamesProps) {
             href="/games"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-lg font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20 font-[var(--font-inter)]"
           >
-            Ver todos os jogos
+            See all featured games
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>

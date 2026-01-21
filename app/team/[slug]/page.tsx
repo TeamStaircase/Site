@@ -106,7 +106,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!member) {
     return {
-      title: "Membro não encontrado | Team Staircase",
+      title: "Member not found | Team Staircase",
     };
   }
 
@@ -116,14 +116,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const roleDescription = member.skills && member.skills.length > 0 
     ? member.skills[0] 
-    : "Membro do Team Staircase";
+    : "Team Staircase Member";
 
   return {
     title: `${member.name} | Team Staircase`,
-    description: `${roleDescription} - ${member.name} do Team Staircase`,
+    description: `${roleDescription} - ${member.name} of Team Staircase`,
     openGraph: {
       title: `${member.name} | Team Staircase`,
-      description: `${roleDescription} - ${member.name} do Team Staircase`,
+      description: `${roleDescription} - ${member.name} of Team Staircase`,
       images: [avatarUrl],
     },
   };
@@ -231,7 +231,7 @@ export default async function MemberPage({ params }: PageProps) {
               ) : (
                 <div className="bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-10 text-center">
                   <p className="text-slate-400 font-[var(--font-inter)] text-lg">
-                    Biografia em breve...
+                    Biography to be added...
                   </p>
                 </div>
               )}
@@ -244,7 +244,7 @@ export default async function MemberPage({ params }: PageProps) {
                 {uniqueTags.length > 0 && (
                   <div className="bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-6">
                     <h3 className="text-2xl font-bold tracking-wider text-white mb-6 font-[var(--font-orbitron)]">
-                      Funções
+                      Roles
                     </h3>
                     <div className="flex flex-wrap gap-3">
                       {uniqueTags.map((tag, index) => (
@@ -263,7 +263,7 @@ export default async function MemberPage({ params }: PageProps) {
                 {member.favoriteGame && (
                   <div className="bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-6">
                     <h3 className="text-2xl font-bold tracking-wider text-white mb-6 font-[var(--font-orbitron)]">
-                      Jogo Favorito
+                      Favorite Games
                     </h3>
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center">

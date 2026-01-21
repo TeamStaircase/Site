@@ -44,12 +44,12 @@ export default function AboutUs({ teamMembers = [] }: AboutUsProps) {
           className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-3 md:mb-4 font-[var(--font-orbitron)] px-4">
-            Sobre Nós
+            About Us
           </h2>
           <p className="text-slate-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto px-4 font-[var(--font-inter)]">
-            O Team Staircase é um time apaixonado por desenvolvimento de jogos,
-            dedicado a criar experiências únicas e memoráveis no universo digital.
-            Nossa missão é transformar ideias em realidade através do projeto Mandora.
+            Team Staircase is a passionate game development,
+            dedicated to creating unique and memorable experiences in the digital world.
+            Our mission is to transform ideas into reality through extraordinary games.
           </p>
         </motion.div>
 

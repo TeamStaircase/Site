@@ -32,12 +32,12 @@ export default function AboutContent({ teamMembers }: AboutContentProps) {
         className="text-center flex flex-col items-center"
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-white mb-4 font-[var(--font-orbitron)]">
-          Sobre Nós
+          About Us
         </h1>
         <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto font-[var(--font-inter)]">
-          O Team Staircase é um time apaixonado por desenvolvimento de jogos,
-          dedicado a criar experiências únicas e memoráveis no universo digital.
-          Nossa missão é transformar ideias em realidade através de jogos extraordinários.
+          Team Staircase is a passionate game development,
+          dedicated to creating unique and memorable experiences in the digital world.
+          Our mission is to transform ideas into reality through extraordinary games.
         </p>
       </motion.div>
 

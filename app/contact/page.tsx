@@ -77,10 +77,10 @@ export default function ContactPage() {
             className="text-center mb-12 flex flex-col items-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-white mb-4 font-[var(--font-orbitron)]">
-              Entre em Contato
+              Contact Us
             </h1>
             <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto font-[var(--font-inter)]">
-              Tem uma ideia, pergunta ou quer trabalhar conosco? Adoraríamos ouvir você!
+              Do you have an idea, question or want to work with us? We would love to hear it!
             </p>
           </motion.div>
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
               {/* Nome */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2 font-[var(--font-inter)]">
-                  Nome
+                  Name
                 </label>
                 <input
                   type="text"
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full bg-slate-950/50 border border-white/10 rounded-lg p-3 focus:border-purple-500 transition-colors outline-none text-slate-300 placeholder-slate-500 font-[var(--font-inter)]"
-                  placeholder="Seu nome completo"
+                  placeholder="Full name"
                 />
               </div>
 
@@ -123,14 +123,14 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full bg-slate-950/50 border border-white/10 rounded-lg p-3 focus:border-purple-500 transition-colors outline-none text-slate-300 placeholder-slate-500 font-[var(--font-inter)]"
-                  placeholder="seu@email.com"
+                  placeholder="your@email.com"
                 />
               </div>
 
               {/* Assunto */}
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-2 font-[var(--font-inter)]">
-                  Assunto
+                  Topic
                 </label>
                 <select
                   id="subject"
@@ -141,13 +141,10 @@ export default function ContactPage() {
                   className="w-full bg-slate-950/50 border border-white/10 rounded-lg p-3 focus:border-purple-500 transition-colors outline-none text-slate-300 font-[var(--font-inter)]"
                 >
                   <option value="" disabled className="bg-slate-950">
-                    Selecione um assunto
-                  </option>
-                  <option value="Orçamento" className="bg-slate-950">
-                    Orçamento
+                    Select a topic
                   </option>
                   <option value="Suporte" className="bg-slate-950">
-                    Suporte
+                    Suport
                   </option>
                   <option value="Feedback" className="bg-slate-950">
                     Feedback
@@ -158,7 +155,7 @@ export default function ContactPage() {
               {/* Mensagem */}
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2 font-[var(--font-inter)]">
-                  Mensagem
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -168,7 +165,7 @@ export default function ContactPage() {
                   required
                   rows={6}
                   className="w-full bg-slate-950/50 border border-white/10 rounded-lg p-3 focus:border-purple-500 transition-colors outline-none text-slate-300 placeholder-slate-500 resize-none font-[var(--font-inter)]"
-                  placeholder="Conte-nos mais sobre sua ideia, pergunta ou proposta..."
+                  placeholder="Tell us more about your idea, question, or proposal..."
                 />
               </div>
 
@@ -179,7 +176,7 @@ export default function ContactPage() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400 text-sm font-[var(--font-inter)]"
                 >
-                  Mensagem enviada com sucesso! Entraremos em contato em breve.
+                  Message sent succesfully! We will contact you soon.
                 </motion.div>
               )}
 
@@ -189,7 +186,7 @@ export default function ContactPage() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-400 text-sm font-[var(--font-inter)]"
                 >
-                  Ocorreu um erro ao enviar a mensagem. Tente novamente.
+                  There was a problem sending the message. Try again.
                 </motion.div>
               )}
 
@@ -202,12 +199,12 @@ export default function ContactPage() {
                 {isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                    Enviando...
+                    Sending...
                   </>
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    Enviar Mensagem
+                    Send Message
                   </>
                 )}
               </button>

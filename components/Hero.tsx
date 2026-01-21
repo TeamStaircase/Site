@@ -28,7 +28,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-[var(--font-inter)]"
           >
-            Criando mundos digitais imersivos e experiências únicas
+            Creating fun games step by step.
           </motion.p>
         </motion.div>
       </Container>

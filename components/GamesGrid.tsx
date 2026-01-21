@@ -23,10 +23,10 @@ export default function GamesGrid({ games }: GamesGridProps) {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-white mb-4 font-[var(--font-orbitron)]">
-            Nossos Jogos
+            Our Games
           </h2>
           <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto font-[var(--font-inter)]">
-            Explore os mundos digitais que criamos com paixão e dedicação
+            Explore the digital worlds we've created with passion and dedication.
           </p>
         </motion.div>
 
@@ -42,10 +42,10 @@ export default function GamesGrid({ games }: GamesGridProps) {
               <span className="text-4xl">🎮</span>
             </div>
             <h3 className="text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-3 font-[var(--font-orbitron)]">
-              Em breve novos projetos
+              New projects soon!
             </h3>
             <p className="text-slate-400 max-w-md mx-auto font-[var(--font-inter)]">
-              Estamos trabalhando em projetos incríveis. Volte em breve para ver nossos jogos!
+              We're working on some amazing projects. Come back soon to check out our games!
             </p>
           </motion.div>
         ) : (

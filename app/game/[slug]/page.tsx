@@ -120,8 +120,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!game) {
     return {
-      title: "Jogo não encontrado",
-      description: "O jogo que você está procurando não foi encontrado.",
+      title: "Game not found.",
+      description: "The game you're searching for is missing.",
     };
   }
 
@@ -253,7 +253,7 @@ export default async function GamePage({ params }: PageProps) {
                 </div>
               ) : (
                 <div className="text-slate-400 text-center font-[var(--font-inter)]">
-                  <p>Descrição em breve...</p>
+                  <p>Description soon...</p>
                 </div>
               )}
 
@@ -275,7 +275,7 @@ export default async function GamePage({ params }: PageProps) {
             <aside className="lg:col-span-4">
               <div className="sticky top-24 bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-xl p-6 space-y-6 flex flex-col">
                 <h3 className="text-xl font-bold tracking-wider text-white font-[var(--font-orbitron)] mb-6">
-                  Informações
+                  Informations
                 </h3>
                 
                 {/* Botões de Ação */}
@@ -288,7 +288,7 @@ export default async function GamePage({ params }: PageProps) {
                       className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-lg font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-violet-500/20"
                     >
                       <ExternalLink className="w-5 h-5" />
-                      Jogar na Steam
+                      Play on Steam
                     </a>
                   ) : null}
                   
@@ -300,7 +300,7 @@ export default async function GamePage({ params }: PageProps) {
                       className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-lg font-medium text-white transition-all duration-300 hover:border-purple-500/50 hover:bg-slate-800/50 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20"
                     >
                       <Gamepad2 className="w-5 h-5" />
-                      Baixar no Itch.io
+                      Download on Itch.io
                     </a>
                   ) : null}
                   
@@ -318,7 +318,7 @@ export default async function GamePage({ params }: PageProps) {
                   
                   {!game.platformLinks?.steam && !game.platformLinks?.itch && !game.platformLinks?.googlePlay && (
                     <p className="text-slate-400 text-sm text-center font-[var(--font-inter)]">
-                      Links de download em breve
+                      Download links to be added soon
                     </p>
                   )}
                 </div>
@@ -331,7 +331,7 @@ export default async function GamePage({ params }: PageProps) {
                       <Tag className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="text-xs text-slate-500 font-[var(--font-inter)] uppercase tracking-wider mb-1">
-                          Gênero
+                          Genre
                         </p>
                         <p className="text-slate-300 font-medium font-[var(--font-inter)]">
                           {game.genre}
@@ -345,7 +345,7 @@ export default async function GamePage({ params }: PageProps) {
                     <Calendar className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-xs text-slate-500 font-[var(--font-inter)] uppercase tracking-wider mb-1">
-                        Lançamento
+                        Launch Date
                       </p>
                       <p className="text-slate-300 font-medium font-[var(--font-inter)]">
                         {game.releaseDate ? formatDate(game.releaseDate) : 'TBA'}
@@ -358,7 +358,7 @@ export default async function GamePage({ params }: PageProps) {
                     <Gamepad2 className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-xs text-slate-500 font-[var(--font-inter)] uppercase tracking-wider mb-1">
-                        Plataformas
+                        Plataforms
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {game.platformLinks?.steam && (
@@ -378,7 +378,7 @@ export default async function GamePage({ params }: PageProps) {
                         )}
                         {!game.platformLinks?.steam && !game.platformLinks?.itch && !game.platformLinks?.googlePlay && (
                           <span className="text-slate-400 text-xs font-[var(--font-inter)]">
-                            Em breve
+                            Soon
                           </span>
                         )}
                       </div>
@@ -388,7 +388,7 @@ export default async function GamePage({ params }: PageProps) {
                   {/* Equipe */}
                   <div className="pt-4 border-t border-white/10">
                     <p className="text-xs text-slate-500 font-[var(--font-inter)] uppercase tracking-wider mb-2">
-                      Equipe
+                      Team
                     </p>
                     <p className="text-slate-300 font-medium font-[var(--font-inter)]">
                       Team Staircase

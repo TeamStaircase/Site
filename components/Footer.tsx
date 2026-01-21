@@ -9,7 +9,7 @@ const socialLinks = [
   { icon: X, href: "https://x.com/TeamStaircase", label: "X" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/111147104/", label: "LinkedIn" },
   { icon: Instagram, href: "https://www.instagram.com/teamstaircaseofficial/", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Youtube, href: "https://www.youtube.com/@TeamStaircase", label: "YouTube" },
   { icon: Mail, href: "mailto:teamstaircasegames@gmail.com", label: "Email" },
   { icon: Gamepad2, href: "https://team-staircase.itch.io/", label: "Itch.io" },
   { icon: TbButterfly, href: "https://bsky.app/profile/team-staircase.bsky.social", label: "Bluesky" },
@@ -31,7 +31,7 @@ export default function Footer() {
               Team Staircase
             </h3>
             <p className="text-slate-400 text-xs sm:text-sm font-[var(--font-inter)]">
-              Criando mundos digitais imersivos e experiências únicas
+              Creating fun games step by step
             </p>
           </motion.div>
 
@@ -73,7 +73,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-white/10 text-center text-slate-400 text-xs sm:text-sm font-[var(--font-inter)]"
         >
-          <p>&copy; {new Date().getFullYear()} Team Staircase. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Team Staircase. All rights reserved.</p>
         </motion.div>
       </Container>
     </footer>
