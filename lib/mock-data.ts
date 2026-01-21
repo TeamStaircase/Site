@@ -92,6 +92,7 @@ export const mockTeamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Alex Chen",
+    slug: "alex-chen",
     role: "Game Designer",
     photo: "/api/placeholder/400/400",
     socialLink: "https://twitter.com/alexchen",
@@ -99,6 +100,7 @@ export const mockTeamMembers: TeamMember[] = [
   {
     id: 2,
     name: "Sarah Martinez",
+    slug: "sarah-martinez",
     role: "Lead Developer",
     photo: "/api/placeholder/400/400",
     socialLink: "https://github.com/sarahmartinez",
@@ -106,6 +108,7 @@ export const mockTeamMembers: TeamMember[] = [
   {
     id: 3,
     name: "Jordan Kim",
+    slug: "jordan-kim",
     role: "Art Director",
     photo: "/api/placeholder/400/400",
     socialLink: "https://artstation.com/jordankim",
@@ -113,6 +116,7 @@ export const mockTeamMembers: TeamMember[] = [
   {
     id: 4,
     name: "Morgan Lee",
+    slug: "morgan-lee",
     role: "Sound Designer",
     photo: "/api/placeholder/400/400",
     socialLink: "https://soundcloud.com/morganlee",
@@ -120,6 +124,7 @@ export const mockTeamMembers: TeamMember[] = [
   {
     id: 5,
     name: "Riley Taylor",
+    slug: "riley-taylor",
     role: "Narrative Designer",
     photo: "/api/placeholder/400/400",
     socialLink: "https://twitter.com/rileytaylor",
@@ -127,6 +132,7 @@ export const mockTeamMembers: TeamMember[] = [
   {
     id: 6,
     name: "Casey Wong",
+    slug: "casey-wong",
     role: "UI/UX Designer",
     photo: "/api/placeholder/400/400",
     socialLink: "https://dribbble.com/caseywong",
